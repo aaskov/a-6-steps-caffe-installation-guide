@@ -43,10 +43,10 @@ gedit Makefile.config
 ```
 
 Scroll down and find and change the following lines:
-| Line | Change                                                  | To                                                                                             |
-| -----| ------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| 8    | `# CPU_ONLY := 1`                                       | `CPU_ONLY := 1`                                                                                |
-| 90   | `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include`  | `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/`               |
+| Line | Change | To |
+| ---- | ------ | -- |
+| 8    | `# CPU_ONLY := 1` | `CPU_ONLY := 1` |
+| 90   | `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include` | `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/` |
 | 91   | `LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib` | `LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial/` |
 
 

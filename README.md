@@ -1,6 +1,7 @@
-6-step Caffe installation guide
+6-steps Caffe installation guide
 =============
-Here follows the 6-step installation guide for installing the required packages for Caffe on Ubuntu (16.04). 
+Here follows the 6-steps installation guide for installing Caffe on Ubuntu (16.04). This guide is meant as an get easy started guide and thus will only support CPU only performance.
+
 
 Step 1 - Download Caffe
 -----
@@ -8,7 +9,7 @@ Step 1 - Download Caffe
 cd ~ && git clone https://github.com/BVLC/caffe.git
 ```
 
-Step 2 - Download and install dependencies
+Step 2 - Install dependencies
 -----
 ```bash
 sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
@@ -17,7 +18,7 @@ sudo apt-get install cmake libgflags-dev libgoogle-glog-dev liblmdb-dev python-p
 sudo apt-get install build-essential python-dev
 ```
 
-Step 3 - Python requirements
+Step 3 - Install Python requirements
 -----
 ```bash
 cd ~/caffe/python/
@@ -25,7 +26,7 @@ for req in $(cat requirements.txt); do sudo pip install $req; done
 sudo pip install sklearn
 ```
 
-Step 4 - Edit Makefile.config
+Step 4 - Edit the `Makefile.config`
 -----
 ```bash
 cd ~/caffe
@@ -37,8 +38,8 @@ gedit Makefile.config
 ```
 
 Change the corresponding lines to the following
-`CPU_ONLY := 1`\n
-`+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/`\n
+`CPU_ONLY := 1`
+`+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/`
 `+LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial/`
 
 

@@ -21,8 +21,8 @@ sudo apt-get install build-essential python-dev
 ```
 
 Step 3 - Install Python requirements
-You can skip this step if you do not need the Python interface. 
 -----
+You can skip this step if you do not need the Python interface. 
 ```bash
 cd ~/caffe/python/
 for req in $(cat requirements.txt); do sudo pip install $req; done

@@ -14,9 +14,6 @@ Open up a terminal window (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>) and 
 ```bash
 cd ~ && git clone https://github.com/BVLC/caffe.git
 ```
-<p align="center">
-  <img src="https://www.documentsanddesigns.com/media/view/200/135/Simple-Line-Dark-6.gif" />
-</p>
 
 
 ## 2. Install dependencies
@@ -27,9 +24,6 @@ sudo apt-get install cmake libgflags-dev libgoogle-glog-dev liblmdb-dev python-p
 sudo apt-get install build-essential python-dev
 ```
 
-<p align="center">
-  <img src="https://www.documentsanddesigns.com/media/view/200/135/Simple-Line-Dark-6.gif" />
-</p>
 
 
 ## 3. Install Python requirements
@@ -39,10 +33,6 @@ cd ~/caffe/python/
 for req in $(cat requirements.txt); do sudo pip install $req; done
 sudo pip install sklearn
 ```
-
-<p align="center">
-  <img src="https://www.documentsanddesigns.com/media/view/200/135/Simple-Line-Dark-6.gif" />
-</p>
 
 
 ## 4. Edit the Makefile
@@ -62,9 +52,6 @@ gedit Makefile.config
 | 90   | `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include` | `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/` |
 | 91   | `LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib` | `LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial/` |
 
-<p align="center">
-  <img src="https://www.documentsanddesigns.com/media/view/200/135/Simple-Line-Dark-6.gif" />
-</p>
 
 
 ## 5. Create symbolic links
@@ -75,9 +62,6 @@ sudo ln -s libhdf5_serial.so.10.0.2 libhdf5.so
 sudo ln -s libhdf5_serial_hl.so.10.0.2 libhdf5_hl.so
 ```
 
-<p align="center">
-  <img src="https://www.documentsanddesigns.com/media/view/200/135/Simple-Line-Dark-6.gif" />
-</p>
 
 
 ## 6. Build Caffe

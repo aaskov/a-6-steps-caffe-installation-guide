@@ -1,4 +1,4 @@
-A 6-steps Caffe installation guide
+A 6-step Caffe installation guide
 =============
 Here follows the 6-steps installation guide for installing Caffe on Ubuntu (16.04) with Python. This guide is meant as an get easy started guide and thus will only support CPU only performance.
 

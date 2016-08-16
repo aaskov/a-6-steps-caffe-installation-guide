@@ -3,7 +3,7 @@ Here follows the 6-steps installation guide for installing Caffe on Ubuntu (16.0
 
 1. <a href="https://github.com/aaskov/6-steps-Caffe-install#1---download-caffe">Download Caffe</a>
 2. <a href="https://github.com/aaskov/6-steps-Caffe-install#2---install-dependencies">Install dependencies</a>
-3. <a href="https://github.com/aaskov/6-steps-Caffe-install#3---install-pyton-requirements">Install Python requirements</a>
+3. <a href="https://github.com/aaskov/6-steps-Caffe-install#3---install-python-requirements">Install Python requirements</a>
 4. <a href="https://github.com/aaskov/6-steps-Caffe-install#4---edit-the-makefile">Edit the Makefile</a>
 5. <a href="https://github.com/aaskov/6-steps-Caffe-install#5---create-symbolic-links-attention">Create symbolic links</a>
 6. <a href="https://github.com/aaskov/6-steps-Caffe-install#6---build-caffe">Build Caffe</a>
@@ -62,7 +62,7 @@ sudo ln -s libhdf5_serial_hl.so.10.0.2 libhdf5_hl.so
 ```
 
 
-## Step 6 - Build Caffe
+## 6 - Build Caffe
 Finally we need to build Caffe with the following commands. You can speed up this process by changing `--jobs=2` to eg. `--jobs=4` if you have a quad-core processor.
 ```bash
 cd ~/caffe

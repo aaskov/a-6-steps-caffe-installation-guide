@@ -35,12 +35,11 @@ We need to create the `Makefile.config` and edit it to our needs. The git packag
 cd ~/caffe && cp Makefile.config.example Makefile.config 
 ```
 
-Now edit the Makefile using a text editor (e.g. `gedit`, `nano`, ...)
+Now edit the Makefile using a text editor (e.g. `gedit`, `nano`, ...) and change the lines as listed in the table below.
 ```bash
 gedit Makefile.config
 ```
 
-Next change the following lines. 
 | Line | Change from  | Change to |
 | ---- | ------------ | --------- |
 | 8    | `# CPU_ONLY := 1`  | `CPU_ONLY := 1` |

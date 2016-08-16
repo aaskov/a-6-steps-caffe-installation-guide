@@ -1,16 +1,18 @@
-6-steps Caffe installation guide
+A 6-steps Caffe installation guide
 =============
-Here follows the 6-steps installation guide for installing Caffe on Ubuntu (16.04). This guide is meant as an get easy started guide and thus will only support CPU only performance.
+Here follows the 6-steps installation guide for installing Caffe on Ubuntu (16.04) with Python. This guide is meant as an get easy started guide and thus will only support CPU only performance.
 
 
 Step 1 - Download Caffe
 -----
+Open up a terminal window (`Ctrl` + `Alt` + `t`)
 ```bash
 cd ~ && git clone https://github.com/BVLC/caffe.git
 ```
 
 Step 2 - Install dependencies
 -----
+Now install all the required dependencies. 
 ```bash
 sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 sudo apt-get install --no-install-recommends libboost-all-dev libatlas-base-dev
@@ -19,6 +21,7 @@ sudo apt-get install build-essential python-dev
 ```
 
 Step 3 - Install Python requirements
+You can skip this step if you do not need the Python interface. 
 -----
 ```bash
 cd ~/caffe/python/
@@ -28,19 +31,22 @@ sudo pip install sklearn
 
 Step 4 - Edit the `Makefile.config`
 -----
+Create the Makefile.config required for building Caffe. The git package already comes with an Makefile example and we only need to change a few things.
 ```bash
 cd ~/caffe
 cp Makefile.config.example Makefile.config 
 ```
-Now edit the Makefile using a text editor (e.g. gedit, nano, ...)
+
+Now edit the Makefile using a text editor (e.g. `gedit`, `nano`, ...)
 ```bash
 gedit Makefile.config
 ```
 
-Change the corresponding lines to the following
-`CPU_ONLY := 1`
-`+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/`
-`+LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial/`
+Scroll down and find and change the following lines:
+
+Change: `# CPU_ONLY := 1` to `CPU_ONLY := 1`.
+Change: `+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include` to `+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/`
+Change: `+LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib` to `+LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial/`
 
 
 

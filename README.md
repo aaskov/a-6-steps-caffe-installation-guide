@@ -45,7 +45,7 @@ gedit Makefile.config
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
-| `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include`  | Content Cell  |
+| `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include`  | `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/`  |
 
 Scroll down and find and change the following lines:
 | Line | Change | To |

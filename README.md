@@ -51,7 +51,7 @@ gedit Makefile.config
 
 Step 5 - Create symbolic links (ATTENTION)
 -----
-On Ubuntu we need to create symbolic links to the `libhdf5` package.
+On Ubuntu we need to create symbolic links to the `libhdf5` package. Be carefull with the verision numbers.
 ```bash
 cd /usr/lib/x86_64-linux-gnu
 sudo ln -s libhdf5_serial.so.10.0.2 libhdf5.so
@@ -60,7 +60,7 @@ sudo ln -s libhdf5_serial_hl.so.10.0.2 libhdf5_hl.so
 
 Step 6 - Build Caffe
 -----
-Finally we need to build Caffe with the following commands.
+Finally we need to build Caffe with the following commands. You can speed up this process by changing `--jobs=2` to eg. `--jobs=4` if you have a quad-core processor.
 ```bash
 cd ~/caffe
 make clean

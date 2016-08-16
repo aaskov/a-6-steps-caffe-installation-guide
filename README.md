@@ -42,6 +42,11 @@ Now edit the Makefile using a text editor (e.g. `gedit`, `nano`, ...)
 gedit Makefile.config
 ```
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 Scroll down and find and change the following lines:
 | Line | Change | To |
 | ---- | ------ | -- |

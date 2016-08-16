@@ -42,17 +42,12 @@ Now edit the Makefile using a text editor (e.g. `gedit`, `nano`, ...)
 gedit Makefile.config
 ```
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include`  | `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/`  |
-
-Scroll down and find and change the following lines:
-| Line | Change | To |
-| ---- | ------ | -- |
-| 8    | `# CPU_ONLY := 1` | `CPU_ONLY := 1` |
+| Line | Change from  | Change to |
+| ---- | ------------ | --------- |
+| 8    | `# CPU_ONLY := 1`  | `CPU_ONLY := 1` |
 | 90   | `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include` | `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/` |
 | 91   | `LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib` | `LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial/` |
+|
 
 
 

@@ -1,15 +1,15 @@
 # A 6-step Caffe installation guide
-Here follows the 6-steps installation guide for installing Caffe on Ubuntu (16.04) with Python. This guide is meant as an "get easy started" guide and thus will only support CPU only performance. The guide is separated into the following steps:
+Here follows the 6-steps installation guide for installing Caffe on Ubuntu (16.04) with Python. This guide is meant as an "get easy started" guide and thus will be CPU runtime only. The guide is separated into the following steps:
 
 1. <a href="https://github.com/aaskov/6-steps-Caffe-install#1---download-caffe">Download Caffe</a>
 2. <a href="https://github.com/aaskov/6-steps-Caffe-install#2---install-dependencies">Install dependencies</a>
 3. <a href="https://github.com/aaskov/6-steps-Caffe-install#3---install-python-requirements">Install Python requirements</a>
 4. <a href="https://github.com/aaskov/6-steps-Caffe-install#4---edit-the-makefile">Edit the Makefile</a>
-5. <a href="https://github.com/aaskov/6-steps-Caffe-install#5---create-symbolic-links-attention">Create symbolic links</a>
+5. <a href="https://github.com/aaskov/6-steps-Caffe-install#5---create-symbolic-links">Create symbolic links</a>
 6. <a href="https://github.com/aaskov/6-steps-Caffe-install#6---build-caffe">Build Caffe</a>
 
 
-## 1 - Download Caffe
+## 1. Download Caffe
 Open up a terminal window (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>) and run:
 ```bash
 cd ~ && git clone https://github.com/BVLC/caffe.git
@@ -53,7 +53,7 @@ gedit Makefile.config
 
 
 
-## 5 - Create symbolic links (ATTENTION)
+## 5 - Create symbolic links
 On Ubuntu we need to create symbolic links to the `libhdf5` package. Be carefull with the verision numbers.
 ```bash
 cd /usr/lib/x86_64-linux-gnu

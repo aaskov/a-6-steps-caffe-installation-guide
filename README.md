@@ -72,6 +72,7 @@ make clean
 make all --jobs=2
 make test --jobs=2
 make runtest --jobs=2
+make distribute
 make pycaffe
 ```
 You're done!
